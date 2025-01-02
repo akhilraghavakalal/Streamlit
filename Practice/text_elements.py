@@ -25,3 +25,20 @@ def codesample:
     print("Code Sample")
 """
 st.code(code, language="python")
+
+st.divider()
+
+st.header("If you want to know anything about a particular attribute just write the attribute without a parenthisis and it will display all the information from streamlit along with cool examples")
+st.subheader("st.subheader")
+# st.subheader
+st.divider()
+st.subheader("_Streamlit_ is :blue[cool] :heart:")
+st.subheader("This is a subheader with a divider", divider="gray")
+st.subheader("These subheaders have rotating dividers", divider=True)
+st.subheader("One", divider=True)
+st.subheader("Two", divider=True)
+st.subheader("Three", divider=True)
+st.subheader("Four", divider=True)
+
+st.divider()
+st.header("https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/")
