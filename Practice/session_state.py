@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.subheader("Counter does not increase eventhough the button is clicked multiple times, since when the button is clicked, the code re runs from the top. So the value of counter will be atmost 1")
+st.subheader(
+    "Counter does not increase eventhough the button is clicked multiple times, since when the button is clicked, the code re runs from the top. So the value of counter will be atmost 1"
+)
 counter = 0
 
 st.write(f"Counter value: {counter}")
@@ -15,7 +17,9 @@ else:
 
 st.divider()
 
-st.subheader("To store the values, eventhough the code re runs from the start, we need to use something called as session_state")
+st.subheader(
+    "To store the values, eventhough the code re runs from the start, we need to use something called as session_state"
+)
 
 if "count" not in st.session_state:
     st.session_state.count = 0
@@ -28,3 +32,8 @@ if button_clicked2:
     st.write(f"Counter incremented: {st.session_state.count}")
 else:
     st.write(f"Counter remains the same: {st.session_state.count}")
+
+st.divider()
+st.subheader(
+    "Session state remains the same throughout the session for an user. If the user changes or refreshes the browser then the session_state resets"
+)
